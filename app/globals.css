@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Smooth scrolling ──────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Theme variable defaults (overridden per-client via LandingPage.tsx) ─ */
+:root {
+  --font-heading:          system-ui, sans-serif;
+  --theme-hero-bg:         #111827;
+  --theme-hero-overlay:    rgba(0, 0, 0, 0.55);
+  --theme-btn-radius:      0.75rem;
+  --theme-card-radius:     1rem;
+  --theme-card-shadow:     0 1px 3px 0 rgb(0 0 0 / 0.06), 0 4px 16px 0 rgb(0 0 0 / 0.06);
+  --theme-section-alt:     #f9fafb;
+  --theme-trust-bar-bg:    #f9fafb;
+  --theme-trust-bar-color: #374151;
+}
+
+/* ── Font smoothing ────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-site), system-ui, sans-serif;
+  }
+
+  /* Heading font — industry-specific, loaded per-client via LandingPage.tsx */
+  h1,
+  h2 {
+    font-family: var(--font-heading), var(--font-site), system-ui, sans-serif;
+  }
+}
+
+/* ── Focus ring ────────────────────────────────────────────────────────── */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+/* ── Utility: brand-tinted background ──────────────────────────────────── */
+@layer utilities {
+  .bg-primary-soft {
+    background-color: color-mix(in srgb, var(--color-primary) 10%, white);
+  }
+  .text-primary-dark {
+    color: color-mix(in srgb, var(--color-primary) 80%, black);
+  }
+}
