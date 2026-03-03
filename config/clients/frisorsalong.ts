@@ -17,7 +17,7 @@ export const frisorsalong: ClientEntry = {
     headline: 'Din nya favoritstudio — experter på klipp, färg och behandlingar som passar just dig.',
     subheadline:
       'Vi lyssnar på dig, förstår ditt hår och skapar en stil du kan leva med. Boka din tid och känn skillnaden från första besöket.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/frisorsalong.jpg',
     ctaPrimary: 'Boka din tid',
     ctaSecondary: 'Se våra tjänster',
 

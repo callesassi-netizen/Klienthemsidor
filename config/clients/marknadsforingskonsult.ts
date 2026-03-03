@@ -17,7 +17,7 @@ export const marknadsforingskonsult: ClientEntry = {
     headline: 'Sluta gissa, börja växa — digital marknadsföring som genererar riktiga kunder.',
     subheadline:
       'Vi hjälper svenska tjänsteföretag att synas på rätt ställen, attrahera rätt kunder och skala sin tillväxt med beprövade digitala strategier.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/marknadsforingskonsult.jpg',
     ctaPrimary: 'Boka gratis strategisamtal',
     ctaSecondary: 'Se våra case',
 

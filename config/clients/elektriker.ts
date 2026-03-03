@@ -17,7 +17,7 @@ export const elektriker: ClientEntry = {
     headline: 'Auktoriserad elektriker — snabb, säker och alltid i tid.',
     subheadline:
       'Elarbeten för hem och företag utförda av certifierade elektriker. Vi svarar inom 60 minuter och lämnar kostnadsfri offert.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/elektriker.jpg',
     ctaPrimary: 'Få kostnadsfri offert',
     ctaSecondary: 'Se våra tjänster',
 

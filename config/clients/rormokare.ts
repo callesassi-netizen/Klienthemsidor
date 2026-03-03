@@ -17,7 +17,7 @@ export const rormokare: ClientEntry = {
     headline: 'Snabb och pålitlig rörmokare — vi löser läckor, avlopp och badrum utan stress.',
     subheadline:
       'Auktoriserad VVS-firma med jour dygnet runt. Vi är på plats inom 2 timmar vid akuta problem — och lämnar alltid fast pris.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/rormokare.jpg',
     ctaPrimary: 'Kontakta oss nu',
     ctaSecondary: 'Se våra tjänster',
 

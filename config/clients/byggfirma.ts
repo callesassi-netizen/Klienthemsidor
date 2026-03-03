@@ -17,7 +17,7 @@ export const byggfirma: ClientEntry = {
     headline: 'Erfaren byggfirma för ROT-arbeten, tillbyggnader och renoveringar — vi håller vad vi lovar.',
     subheadline:
       'Skickliga hantverkare, tydliga avtal och noggrann projektstyrning. Vi levererar på tid, inom budget och med kvalitet som syns.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/byggfirma.jpg',
     ctaPrimary: 'Boka kostnadsfri genomgång',
     ctaSecondary: 'Se referensprojekt',
 

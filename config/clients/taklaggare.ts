@@ -17,7 +17,7 @@ export const taklaggare: ClientEntry = {
     headline: 'Professionell takläggning och takrenovering — vi skyddar ditt hem mot väder och vind.',
     subheadline:
       'Certifierade takläggare med 25 års erfarenhet. Vi arbetar med alla takmaterial och ger 10 års garanti på utfört arbete.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/taklaggare.jpg',
     ctaPrimary: 'Boka gratis takinspektion',
     ctaSecondary: 'Se våra tjänster',
 

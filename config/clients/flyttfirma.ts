@@ -17,7 +17,7 @@ export const flyttfirma: ClientEntry = {
     headline: 'Stressfri flytt från start till mål — vi tar hand om allt medan du fokuserar framåt.',
     subheadline:
       'Professionell och försäkrad flytthjälp för privatpersoner och företag. Fast pris, punktliga flyttare och inga dolda avgifter.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/flyttfirma.jpg',
     ctaPrimary: 'Få fast pris direkt',
     ctaSecondary: 'Se vad som ingår',
 

@@ -50,7 +50,7 @@ const themes: Record<string, ThemeTokens> = {
   elektriker: {
     fontHeading:   'Barlow Condensed',
     heroBg:        'linear-gradient(160deg, #1a1200 0%, #1f1700 50%, #2d2000 100%)',
-    heroOverlay:   'rgba(0,0,0,0.62)',
+    heroOverlay:   'rgba(0,0,0,0.58)',  // Mörk elbild — blandade ljusnivåer
     btnRadius:     '0.25rem',
     cardRadius:    '0.5rem',
     cardShadow:    '0 1px 3px 0 rgb(0 0 0 / 0.10), 0 2px 8px 0 rgb(0 0 0 / 0.06)',
@@ -62,7 +62,7 @@ const themes: Record<string, ThemeTokens> = {
   rormokare: {
     fontHeading:   'Barlow Condensed',
     heroBg:        'linear-gradient(160deg, #0c1a2e 0%, #0f2744 50%, #071220 100%)',
-    heroOverlay:   'rgba(0,0,0,0.60)',
+    heroOverlay:   'rgba(0,0,0,0.68)',  // Ljus bild — vita kakel och varmvattenberedare
     btnRadius:     '0.25rem',
     cardRadius:    '0.5rem',
     cardShadow:    '0 1px 3px 0 rgb(0 0 0 / 0.10), 0 2px 8px 0 rgb(0 0 0 / 0.06)',
@@ -74,7 +74,7 @@ const themes: Record<string, ThemeTokens> = {
   byggfirma: {
     fontHeading:   'Barlow Condensed',
     heroBg:        'linear-gradient(160deg, #18181b 0%, #27272a 50%, #18181b 100%)',
-    heroOverlay:   'rgba(0,0,0,0.65)',
+    heroOverlay:   'rgba(0,0,0,0.60)',  // Medelmörk bild — träarbete i varma toner
     btnRadius:     '0.25rem',
     cardRadius:    '0.5rem',
     cardShadow:    '0 1px 3px 0 rgb(0 0 0 / 0.10), 0 2px 8px 0 rgb(0 0 0 / 0.06)',
@@ -86,7 +86,7 @@ const themes: Record<string, ThemeTokens> = {
   taklaggare: {
     fontHeading:   'Barlow Condensed',
     heroBg:        'linear-gradient(160deg, #1a0a0a 0%, #2d1515 50%, #1a0a0a 100%)',
-    heroOverlay:   'rgba(0,0,0,0.62)',
+    heroOverlay:   'rgba(0,0,0,0.55)',  // Medelmörk utomhusbild — takpannor
     btnRadius:     '0.25rem',
     cardRadius:    '0.5rem',
     cardShadow:    '0 1px 3px 0 rgb(0 0 0 / 0.10), 0 2px 8px 0 rgb(0 0 0 / 0.06)',
@@ -102,7 +102,7 @@ const themes: Record<string, ThemeTokens> = {
   flyttfirma: {
     fontHeading:   'DM Sans',
     heroBg:        'linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%)',
-    heroOverlay:   'rgba(0,0,0,0.45)',
+    heroOverlay:   'rgba(0,0,0,0.74)',  // Mycket ljus bild — beige rum med kartonger
     btnRadius:     '1.75rem',
     cardRadius:    '1.25rem',
     cardShadow:    '0 1px 2px 0 rgb(0 0 0 / 0.04), 0 4px 16px 0 rgb(0 0 0 / 0.04)',
@@ -114,7 +114,7 @@ const themes: Record<string, ThemeTokens> = {
   stadservice: {
     fontHeading:   'DM Sans',
     heroBg:        'linear-gradient(135deg, #164e63 0%, #155e75 50%, #0e7490 100%)',
-    heroOverlay:   'rgba(0,0,0,0.42)',
+    heroOverlay:   'rgba(0,0,0,0.72)',  // Extremt ljus bild — vita kakel, vitt handfat
     btnRadius:     '1.75rem',
     cardRadius:    '1.25rem',
     cardShadow:    '0 1px 2px 0 rgb(0 0 0 / 0.04), 0 4px 16px 0 rgb(0 0 0 / 0.04)',
@@ -130,7 +130,7 @@ const themes: Record<string, ThemeTokens> = {
   frisorsalong: {
     fontHeading:   'Playfair Display',
     heroBg:        'linear-gradient(145deg, #18181b 0%, #27141e 50%, #1c1017 100%)',
-    heroOverlay:   'rgba(0,0,0,0.55)',
+    heroOverlay:   'rgba(15,5,12,0.70)',  // Ljus rosa bakgrund — behöver tät mauve-tonad overlay
     btnRadius:     '9999px',
     cardRadius:    '0rem',
     cardShadow:    'none',
@@ -158,7 +158,7 @@ const themes: Record<string, ThemeTokens> = {
   'salong-aura': {
     fontHeading:   'Playfair Display',
     heroBg:        'linear-gradient(145deg, #1c1018 0%, #2d1a27 50%, #1a0f1c 100%)',
-    heroOverlay:   'rgba(0,0,0,0.52)',
+    heroOverlay:   'rgba(20,8,16,0.74)',  // Mycket ljus salong-bild — tät mauve overlay
     btnRadius:     '9999px',
     cardRadius:    '0rem',
     cardShadow:    'none',
@@ -174,7 +174,7 @@ const themes: Record<string, ThemeTokens> = {
   bilverkstad: {
     fontHeading:   'Barlow Condensed',
     heroBg:        'linear-gradient(160deg, #0a0a0a 0%, #1a1a1a 50%, #111111 100%)',
-    heroOverlay:   'rgba(0,0,0,0.72)',
+    heroOverlay:   'rgba(0,0,0,0.62)',  // Medelmörk verkstadsbild — dämpat ljus
     btnRadius:     '0.125rem',
     cardRadius:    '0.25rem',
     cardShadow:    '0 2px 4px 0 rgb(0 0 0 / 0.15), 0 4px 16px 0 rgb(0 0 0 / 0.10)',
@@ -190,7 +190,7 @@ const themes: Record<string, ThemeTokens> = {
   redovisningsbyra: {
     fontHeading:   'DM Serif Display',
     heroBg:        'linear-gradient(160deg, #1e1b4b 0%, #1e3a5f 50%, #0f172a 100%)',
-    heroOverlay:   'rgba(0,0,0,0.55)',
+    heroOverlay:   'rgba(8,6,24,0.64)',  // Medelljus kontorsbild — navy-tonad overlay
     btnRadius:     '0.5rem',
     cardRadius:    '0.75rem',
     cardShadow:    '0 1px 3px 0 rgb(0 0 0 / 0.06), 0 4px 12px 0 rgb(0 0 0 / 0.04)',
@@ -206,7 +206,7 @@ const themes: Record<string, ThemeTokens> = {
   marknadsforingskonsult: {
     fontHeading:   'Plus Jakarta Sans',
     heroBg:        'linear-gradient(135deg, #2e1065 0%, #4c1d95 50%, #3b0764 100%)',
-    heroOverlay:   'rgba(0,0,0,0.40)',
+    heroOverlay:   'rgba(15,4,28,0.64)',  // Medelljus kontorsmöte — lila-tonad overlay
     btnRadius:     '0.875rem',
     cardRadius:    '1rem',
     cardShadow:    '0 4px 16px 0 rgb(0 0 0 / 0.08), 0 1px 4px 0 rgb(0 0 0 / 0.04)',

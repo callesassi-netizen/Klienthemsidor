@@ -17,7 +17,7 @@ export const bilverkstad: ClientEntry = {
     headline: 'Ärlig och kunnig bilverkstad — vi fixar bilen rätt, till rätt pris, direkt.',
     subheadline:
       'Oberoende bilverkstad med fabriksutbildade mekaniker. Vi utför service, reparationer och besiktningsförberedelse för alla bilmärken.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/bilverkstad.jpg',
     ctaPrimary: 'Boka service nu',
     ctaSecondary: 'Se vad vi fixar',
 

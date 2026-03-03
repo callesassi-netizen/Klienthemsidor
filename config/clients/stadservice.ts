@@ -17,7 +17,7 @@ export const stadservice: ClientEntry = {
     headline: 'Professionell städning som faktiskt gör skillnad — skinande rent, varje gång.',
     subheadline:
       'Hemstädning, kontorsstädning och storstädning med nöjd-kund-garanti. Vi använder miljövänliga medel och välutbildad personal.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/stadservice.jpg',
     ctaPrimary: 'Boka städning nu',
     ctaSecondary: 'Se vad som ingår',
 

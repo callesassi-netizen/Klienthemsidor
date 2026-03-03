@@ -17,7 +17,7 @@ export const redovisningsbyra: ClientEntry = {
     headline: 'Trygg ekonomi och korrekt bokföring — vi sköter siffrorna så du kan fokusera på affären.',
     subheadline:
       'Erfarna redovisningskonsulter och auktoriserade revisorer med personlig service. Vi är mer än din redovisare — vi är din ekonomiska partner.',
-    heroImage: '/images/hero.jpg',
+    heroImage: '/banners/redovisningsbyra.jpg',
     ctaPrimary: 'Boka gratis rådgivning',
     ctaSecondary: 'Se våra tjänster',
 
