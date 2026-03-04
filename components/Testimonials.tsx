@@ -32,10 +32,10 @@ export function Testimonials({ config }: Props) {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--color-secondary)' }}
           >
-            What Our Clients Say
+            Vad Våra Kunder Säger
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
-            Don't just take our word for it — hear from people who've experienced our service.
+            Ta inte bara vårt ord för det — hör från dem som upplevt vår service.
           </p>
         </div>
 

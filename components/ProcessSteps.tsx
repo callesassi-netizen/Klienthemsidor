@@ -8,7 +8,27 @@ export function ProcessSteps({ config }: Props) {
   if (!config.steps.length) return null;
 
   return (
-    <section aria-labelledby="process-heading" className="py-20 bg-white" id="process">
+    <section
+      aria-labelledby="process-heading"
+      className="py-20 relative"
+      id="process"
+      style={{
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.82) 60%, rgba(255,255,255,1) 100%), url(${config.heroImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Fade in from white at the top to blend with the Offers section */}
+      <div
+        className="absolute inset-x-0 top-0 h-32 pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, white, transparent)' }}
+        aria-hidden="true"
+      />
+      {/* Solid white strip at the very bottom to kill the image edge line */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-2 bg-white pointer-events-none"
+        aria-hidden="true"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2
@@ -16,10 +36,10 @@ export function ProcessSteps({ config }: Props) {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--color-secondary)' }}
           >
-            How It Works
+            Så Här Fungerar Det
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
-            Getting started is simple. Here's what to expect.
+            Att komma igång är enkelt. Det här kan du förvänta dig.
           </p>
         </div>
 
@@ -66,7 +86,7 @@ export function ProcessSteps({ config }: Props) {
               borderRadius: 'var(--theme-btn-radius)',
             }}
           >
-            Get Started Today →
+            Kom igång idag →
           </a>
         </div>
       </div>

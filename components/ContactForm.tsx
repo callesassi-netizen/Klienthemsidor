@@ -29,18 +29,18 @@ function validate(form: FormState): FormErrors {
   const errors: FormErrors = {};
 
   if (!form.name.trim()) {
-    errors.name = 'Name is required.';
+    errors.name = 'Namn är obligatoriskt.';
   }
   if (!form.email.trim()) {
-    errors.email = 'Email is required.';
+    errors.email = 'E-post är obligatoriskt.';
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    errors.email = 'Please enter a valid email address.';
+    errors.email = 'Ange en giltig e-postadress.';
   }
   if (!form.phone.trim()) {
-    errors.phone = 'Phone number is required.';
+    errors.phone = 'Telefonnummer är obligatoriskt.';
   }
   if (!form.service) {
-    errors.service = 'Please select a service.';
+    errors.service = 'Välj en tjänst.';
   }
 
   return errors;
@@ -55,7 +55,7 @@ export function ContactForm({ config }: Props) {
   const serviceOptions =
     config.offers.length > 0
       ? config.offers.map((o) => o.name)
-      : ['General Inquiry', 'Get a Quote', 'Other'];
+      : ['Allmän förfrågan', 'Få en offert', 'Övrigt'];
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -101,18 +101,17 @@ export function ContactForm({ config }: Props) {
             className="text-3xl font-bold mb-4"
             style={{ color: 'var(--color-secondary)' }}
           >
-            We&rsquo;ll Be in Touch Soon!
+            Vi Återkommer Snart!
           </h2>
           <p className="text-gray-500 mb-8 text-lg">
-            Thanks for reaching out. One of our team members will contact you within 2 business
-            hours.
+            Tack för att du hörde av dig. En av våra medarbetare kontaktar dig inom 2 arbetstimmar.
           </p>
           <a
             href={`tel:${config.phone}`}
             className="font-semibold hover:opacity-80 transition-opacity"
             style={{ color: 'var(--color-primary)' }}
           >
-            Need urgent help? Call us: {config.phone}
+            Brådskande? Ring oss: {config.phone}
           </a>
         </div>
       </section>
@@ -129,10 +128,10 @@ export function ContactForm({ config }: Props) {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: 'var(--color-secondary)' }}
             >
-              Get Your Free Quote
+              Få Din Kostnadsfria Offert
             </h2>
             <p className="text-gray-500 text-lg">
-              Fill out the form and we&rsquo;ll get back to you within 2 hours.
+              Fyll i formuläret så återkommer vi inom 2 timmar.
             </p>
           </div>
 
@@ -146,7 +145,7 @@ export function ContactForm({ config }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <Field
                 id="name"
-                label="Full Name"
+                label="Namn"
                 required
                 error={errors.name}
               >
@@ -156,7 +155,7 @@ export function ContactForm({ config }: Props) {
                   type="text"
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="Jane Smith"
+                  placeholder="Anna Svensson"
                   autoComplete="name"
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? 'name-error' : undefined}
@@ -189,7 +188,7 @@ export function ContactForm({ config }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <Field
                 id="phone"
-                label="Phone"
+                label="Telefon"
                 required
                 error={errors.phone}
               >
@@ -199,7 +198,7 @@ export function ContactForm({ config }: Props) {
                   type="tel"
                   value={form.phone}
                   onChange={handleChange}
-                  placeholder="(555) 000-0000"
+                  placeholder="070-000 00 00"
                   autoComplete="tel"
                   aria-invalid={!!errors.phone}
                   aria-describedby={errors.phone ? 'phone-error' : undefined}
@@ -209,7 +208,7 @@ export function ContactForm({ config }: Props) {
 
               <Field
                 id="service"
-                label="Service Type"
+                label="Tjänstetyp"
                 required
                 error={errors.service}
               >
@@ -222,7 +221,7 @@ export function ContactForm({ config }: Props) {
                   aria-describedby={errors.service ? 'service-error' : undefined}
                   className={inputClass(!!errors.service)}
                 >
-                  <option value="">Select a service…</option>
+                  <option value="">Välj en tjänst…</option>
                   {serviceOptions.map((opt) => (
                     <option key={opt} value={opt}>
                       {opt}
@@ -233,14 +232,14 @@ export function ContactForm({ config }: Props) {
             </div>
 
             {/* Message */}
-            <Field id="message" label="Message">
+            <Field id="message" label="Meddelande">
               <textarea
                 id="message"
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Tell us about your project…"
+                placeholder="Berätta om ditt projekt…"
                 className={inputClass(false) + ' resize-none'}
               />
             </Field>
@@ -251,11 +250,11 @@ export function ContactForm({ config }: Props) {
               className="w-full py-4 rounded-xl text-white font-semibold text-lg transition-opacity duration-200 hover:opacity-90 disabled:opacity-60 disabled:cursor-not-allowed"
               style={{ backgroundColor: 'var(--color-primary)' }}
             >
-              {status === 'loading' ? 'Sending…' : config.ctaPrimary}
+              {status === 'loading' ? 'Skickar…' : config.ctaPrimary}
             </button>
 
             <p className="text-center text-xs text-gray-400">
-              We respect your privacy. No spam, ever.
+              Vi respekterar din integritet. Ingen spam, aldrig.
             </p>
           </form>
         </div>

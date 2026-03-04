@@ -18,6 +18,7 @@ import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { ContactForm } from '@/components/ContactForm';
 import { Footer } from '@/components/Footer';
+import { FloatingContact } from '@/components/FloatingContact';
 
 interface Props {
   config: SiteConfig;
@@ -93,6 +94,7 @@ export function LandingPage({ config, clientId }: Props) {
       </main>
 
       <Footer config={config} />
+      <FloatingContact config={config} />
     </div>
   );
 }

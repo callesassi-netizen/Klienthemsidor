@@ -10,10 +10,16 @@ export function Offers({ config }: Props) {
   return (
     <section
       aria-labelledby="offers-heading"
-      className="py-20"
+      className="py-20 relative"
       id="services"
       style={{ background: 'var(--theme-section-alt)' }}
     >
+      {/* Fade to white at the bottom for a smooth transition into the next section */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-32 pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, transparent, white)' }}
+        aria-hidden="true"
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2
@@ -21,10 +27,10 @@ export function Offers({ config }: Props) {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--color-secondary)' }}
           >
-            Our Services &amp; Packages
+            Våra Tjänster &amp; Paket
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
-            Transparent pricing. No hidden fees. Pick the service that fits your needs.
+            Transparent prissättning. Inga dolda avgifter. Välj det paket som passar dig.
           </p>
         </div>
 
@@ -56,7 +62,7 @@ export function Offers({ config }: Props) {
                   style={{ backgroundColor: 'var(--color-primary)' }}
                   aria-label="Most popular option"
                 >
-                  ★ Most Popular
+                  ★ Mest Populär
                 </div>
               )}
 
@@ -112,7 +118,7 @@ export function Offers({ config }: Props) {
                       }
                 }
               >
-                Get Started
+                Kom igång
               </a>
             </div>
           ))}

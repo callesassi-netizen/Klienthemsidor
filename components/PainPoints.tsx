@@ -16,10 +16,10 @@ export function PainPoints({ config }: Props) {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--color-secondary)' }}
           >
-            Sound Familiar?
+            Känner du igen dig?
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
-            We understand the frustrations homeowners and businesses face. Here's what makes us different.
+            Vi förstår frustrationen som husägare och företag möter. Så här gör vi det annorlunda.
           </p>
         </div>
 
