@@ -2,6 +2,12 @@
 
 A production-ready, config-driven landing page template built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. One codebase, unlimited clients — each with its own branding, copy, and theme, switchable via a URL parameter.
 
+> **All client data in this repository is fictional.** The company names, phone
+> numbers, email addresses, testimonials and trust badges in `/config/clients/`
+> are placeholder content written to demonstrate the template — they do not
+> belong to real businesses, and the reviews are not real reviews. Replace every
+> field before deploying a site for an actual client.
+
 ---
 
 ## Tech Stack
@@ -195,4 +201,11 @@ npm run prepare:client  # Scaffold a new client folder (see /clients/_templates)
 
 ## License
 
-Private — all rights reserved. Not for redistribution.
+**Source-available for review — not licensed for reuse.**
+
+The code is published openly so it can be read and assessed, for example as a
+work sample. It is not open source: it is not licensed for commercial use, for
+deployment, or for redistribution in whole or in part, and no rights are granted
+beyond reading it.
+
+© 2026 Carl-Johan Blomstrand. All rights reserved.
